@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import preprocessor
 import plotly.express as px
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -9,7 +8,17 @@ import plotly.figure_factory as ff
 df = pd.read_csv('medal_tally.csv')
 region_df = pd.read_csv('noc_regions.csv')
 
-df = preprocessor.preprocess(df,region_df)
+def preprocess(df,region_df):
+    # filtering for summer olympics
+    df = df[df['Season'] == 'Summer']
+    # merge with region_df
+    df = df.merge(region_df, on='NOC', how='left')
+    # dropping duplicates
+    df.drop_duplicates(inplace=True)
+    # one hot encoding medals
+    df = pd.concat([df, pd.get_dummies(df['Medal'])], axis=1)
+    return df
+
 
 st.sidebar.title("Olympics Analysis")
 user_menu = st.sidebar.radio(
