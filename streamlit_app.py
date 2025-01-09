@@ -15,7 +15,7 @@ st.header(':gray[Explore Data with ease.]', divider='rainbow')
 # File uploader
 file = st.file_uploader('Drop CSV or Excel file', type=['csv', 'xlsx'])
 
-if file is not None:
+if file!=None:
     # Check file type and read data
     if file.name.endswith('csv'):
         data = pd.read_csv(file)
