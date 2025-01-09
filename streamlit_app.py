@@ -5,7 +5,7 @@ import plotly.express as px
 
 st.set_page_config(
     page_title='Analyzer By raj',
-    page_icons='🧞‍♂️'
+    page_icon='🧞‍♂️'
 )
 st.title(':rainbow[Data Analyzer For Everyone]')
 st.header(':gray[Explore Data with ease.]',divider='rainbow')
