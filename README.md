@@ -1,23 +1,67 @@
-# Data Analyzer WebApp 
+Data Analyzer for Everyone 🧞‍♂️
 
+A Streamlit-based application for exploring and analyzing datasets with ease.
 
-Description of the app ...
+Overview
 
-## Demo App
+This application provides an intuitive interface to upload, analyze, and visualize data. It supports both user-uploaded files and built-in datasets. With multiple visualization options and statistical summaries, it simplifies data analysis for everyone.
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
+Features
+	•	Upload your own CSV or Excel files.
+	•	Use preloaded datasets:
+	1.	Diabetes
+	2.	Heart Disease
+	3.	Parkinsons
+	4.	Tips
+	5.	Titanic
+	•	Basic Information:
+	•	Dataset summary (rows, columns, and data types).
+	•	Statistical description of numerical data.
+	•	Top/Bottom Rows Viewer: View specific rows from the dataset.
+	•	Value Counts: Analyze column-wise value distributions with visualizations.
+	•	Group By Operations: Summarize data using operations like sum, max, min, count, and median.
+	•	Dynamic Visualizations:
+	•	Bar Chart
+	•	Line Chart
+	•	Scatter Plot
+	•	Pie Chart
+	•	Sunburst Chart
+	•	Histogram
+	•	Boxplot
 
-## GitHub Codespaces
+Files Included
+	•	app.py: Main application script.
+	•	requirements.txt: List of required Python libraries.
+	•	Built-in datasets:
+	•	diabetes.csv
+	•	heart.csv
+	•	parkinsons.csv
+	•	tips.csv
+	•	titanic.csv
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
+Dependencies
+	•	streamlit
+	•	pandas
+	•	plotly
+	•	openpyxl
 
-## Section Heading
+Install all dependencies using the following command:
 
-This is filler text, please replace this with text for this section.
+pip install -r requirements.txt
 
-## Further Reading
+Screenshots
+	•	Home Page:
+Displays options to upload a file or choose a built-in dataset.
+	•	Dataset Summary:
+View dataset shape, column names, and statistical descriptions.
+	•	Visualizations:
+Create dynamic charts based on grouped data or value counts.
 
-This is filler text, please replace this with a explanatory text about further relevant resources for this repo
-- Resource 1
-- Resource 2
-- Resource 3
+License
+
+This project is licensed under the MIT License.
+
+Acknowledgments
+	•	Streamlit
+	•	Plotly
+	•	Pandas Documentation
