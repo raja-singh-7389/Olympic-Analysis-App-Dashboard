@@ -1,7 +1,5 @@
-# 📦 Streamlit App Starter Kit 
-```
-⬆️ (Replace above with your app's name)
-```
+# Data Analyzer WebApp 
+
 
 Description of the app ...
 
